@@ -37,8 +37,8 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "10px" }}>
-      <h1>ToDo App</h1>
+    <div style={{ padding: "10px", border:"2px solid black", margin:"50px 200px" ,textAlign:"center"}}>
+      <h1>ToDo List</h1>
       {tasks.map((item, index) => {
         return (
           <RenderItem
@@ -51,7 +51,7 @@ function App() {
       })}
 
       <div>
-        <button onClick={onClearClickHandler}>clear marked</button>
+        <button onClick={onClearClickHandler}>clear Completed</button>
       </div>
       <div>
         <form>
